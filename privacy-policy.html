@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WhosThere Privacy Policy</title>
+<meta name="description" content="Privacy policy for the WhosThere Android app.">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a2230; --muted: #5b6575; --accent: #0a7c6a;
+    --card: #f4f7f9; --border: #dde3ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b0f14; --fg: #e6ebf1; --muted: #9aa6b5; --accent: #3fd1b4;
+            --card: #131a22; --border: #243040; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; }
+  h2 { font-size: 1.25rem; margin: 36px 0 8px; color: var(--accent); }
+  .updated { color: var(--muted); margin: 0 0 24px; }
+  .summary {
+    background: var(--card); border: 1px solid var(--border);
+    border-left: 4px solid var(--accent); border-radius: 8px;
+    padding: 14px 16px; margin: 20px 0;
+  }
+  a { color: var(--accent); }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  .table-wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; min-width: 480px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border: 1px solid var(--border); }
+  th { background: var(--card); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy for WhosThere</h1>
+  <p class="updated">Last updated: 1 November 2026</p>
+
+  <p>WhosThere ("the app") is an Android app that helps protect your phone. It records photos, screenshots and
+  approximate location when someone tries to get into your device without permission, and it includes a private
+  vault for your own photos, videos and files. This policy explains what the app accesses, what it stores, and
+  what it shares.</p>
+
+  <div class="summary">
+    <strong>The short version:</strong> WhosThere has no servers and no accounts. Everything stays on your phone
+    unless you choose to turn on backup to your own Google Drive. We do not collect, sell, or share your data, and
+    the app contains no ads or analytics.
+  </div>
+
+  <h2>1. Data the app handles</h2>
+  <p>All of the following is created on your device and stored only on your device (in the app's private storage
+  and a local database):</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Data</th><th>Why it is used</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Photos from the front camera</strong></td><td>Captured when a trigger fires (for example, repeated wrong unlock attempts) to show you who tried to get in.</td></tr>
+      <tr><td><strong>Screenshots</strong></td><td>Captured only if you turn on screenshot monitoring, to show which app was open.</td></tr>
+      <tr><td><strong>Approximate / precise location</strong></td><td>Recorded with a capture so you can see where it happened. Used only when a trigger fires.</td></tr>
+      <tr><td><strong>Event details</strong></td><td>Time, type of trigger, and basic device state (for example SIM change, charger removed, airplane mode).</td></tr>
+      <tr><td><strong>Vault files</strong></td><td>Photos, videos and documents you choose to add to the vault. They are copied into the app's private storage.</td></tr>
+      <tr><td><strong>PINs and unlock codes</strong></td><td>Your app PIN, vault codes and decoy code. These are stored only as one-way hashes in the device's secure storage, never as plain text.</td></tr>
+      <tr><td><strong>App settings</strong></td><td>Your preferences, such as lock delay and theme.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>2. Permissions and why we ask for them</h2>
+  <ul>
+    <li><strong>Camera:</strong> take the intruder photo.</li>
+    <li><strong>Location (including background location):</strong> attach a location to a capture when a trigger fires while the app is not open.</li>
+    <li><strong>Photos and media:</strong> choose items to add to the vault, and restore items back to your gallery. When you add items to the vault, the app asks Android to remove the originals from your gallery, and Android shows its own confirmation.</li>
+    <li><strong>Notifications:</strong> tell you when a capture happened and show the protection status.</li>
+    <li><strong>Phone state and SIM changes:</strong> detect a SIM change as a trigger.</li>
+    <li><strong>Usage access:</strong> detect which app is in the foreground for screenshot monitoring.</li>
+    <li><strong>Accessibility service:</strong> used only to notice which app is on screen so screenshot monitoring can work. It does not read, record or transmit what you type or what is on your screen, other than the screenshots you have enabled, which stay on your device.</li>
+    <li><strong>Device administrator:</strong> detect failed system unlock attempts. It does not let us lock, wipe or control your device.</li>
+    <li><strong>Biometrics:</strong> optionally unlock the app.</li>
+    <li><strong>Run at startup, foreground service, battery optimisation exemption:</strong> keep protection running after a reboot and while the phone is locked.</li>
+  </ul>
+  <p>You can revoke any permission in Android settings at any time. Some protections will stop working without them.</p>
+
+  <h2>3. Google Drive backup (optional)</h2>
+  <p>If you choose to connect Google Drive, the app uploads your captured evidence to <strong>your own</strong>
+  Google Drive account, using the limited <code>drive.file</code> permission, which lets the app see only the files
+  it created. The upload goes directly from your phone to Google. We never receive it. Google's handling of that
+  data is covered by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. You can disconnect
+  Drive in the app at any time and delete the uploaded files from your Drive.</p>
+
+  <h2>4. What we do not do</h2>
+  <ul>
+    <li>We do not run servers that receive your data.</li>
+    <li>We do not collect, sell, rent or share personal data.</li>
+    <li>We do not use advertising, analytics or tracking tools.</li>
+    <li>We do not require an account.</li>
+  </ul>
+
+  <h2>5. Data retention and deletion</h2>
+  <p>Your data stays on your device until you delete it. You can delete individual captures and vault items in the
+  app, and the app can automatically remove old captures based on limits you set. Uninstalling the app removes all
+  data it stored on the device. Files you backed up to Google Drive stay in your Drive until you delete them
+  there.</p>
+
+  <h2>6. Security</h2>
+  <p>Your PINs are stored as hashes in the device's secure storage, and the app is protected by a PIN lock and an
+  optional lock delay. The vault has a decoy mode. No method of storage is perfectly secure, and keeping your
+  phone's own screen lock enabled is part of keeping your data safe.</p>
+
+  <h2>7. Children</h2>
+  <p>WhosThere is not directed at children under 13, and we do not knowingly collect information from them.</p>
+
+  <h2>8. Changes to this policy</h2>
+  <p>If this policy changes, we will update the date at the top and publish the new version at the same location.
+  Material changes will also be noted in the app's release notes.</p>
+
+  <h2>9. Contact</h2>
+  <p>Questions about this policy: <strong>[YOUR CONTACT EMAIL]</strong></p>
+  <p>Developer: <strong>[YOUR NAME OR STUDIO NAME]</strong></p>
+</main>
+</body>
+</html>
